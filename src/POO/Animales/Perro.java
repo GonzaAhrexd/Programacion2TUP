@@ -1,4 +1,6 @@
-package POO;
+package POO.Animales;
+
+import POO.Animales.Animal;
 
 public class Perro extends Animal {
 

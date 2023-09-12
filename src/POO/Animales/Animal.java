@@ -1,4 +1,4 @@
-package POO;
+package POO.Animales;
 
 public class Animal {
     public String tipo;

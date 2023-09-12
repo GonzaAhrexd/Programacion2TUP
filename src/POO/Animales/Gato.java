@@ -1,4 +1,6 @@
-package POO;
+package POO.Animales;
+
+import POO.Animales.Animal;
 
 public class Gato extends Animal {
     public Gato(String img) {

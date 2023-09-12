@@ -52,6 +52,7 @@ public class Electrodomestico {
         for (String colores : coloresDisponibles) {
             if(color.equalsIgnoreCase(colores)){
                 this.color = color;
+                break;
             }else{
                 this.color = colorDefault;
             }
@@ -61,18 +62,13 @@ public class Electrodomestico {
 
     public float precioFinal(){
         float precioFinal = precioBase;
-        if(this.consumoEnergetico == 'A'){
-            precioFinal += 100;
-        }else if(this.consumoEnergetico == 'B'){
-            precioFinal += 80;
-        }else if (this.consumoEnergetico == 'C') {
-            precioFinal += 60;
-        }else if (this.consumoEnergetico == 'D') {
-            precioFinal += 50;
-        }else if (this.consumoEnergetico == 'E') {
-            precioFinal += 30;
-        }else if (this.consumoEnergetico == 'F') {
-            precioFinal += 10;
+        switch (this.consumoEnergetico) {
+            case 'A' -> precioFinal += 100;
+            case 'B' -> precioFinal += 80;
+            case 'C' -> precioFinal += 60;
+            case 'D' -> precioFinal += 50;
+            case 'E' -> precioFinal += 30;
+            case 'F' -> precioFinal += 10;
         }
 
         if(this.peso >= 0 && this.peso <= 20){

@@ -17,6 +17,7 @@ public class Lavarropas extends Electrodomestico{
         this.carga = carga;
     }
 
+
     public float getCarga() {
         return carga;
     }
