@@ -20,4 +20,28 @@ public class DoubleNode {
     public String toString() {
         return this.value;
     }
+
+    public DoubleNode getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(DoubleNode previous) {
+        this.previous = previous;
+    }
+
+    public DoubleNode getNext() {
+        return next;
+    }
+
+    public void setNext(DoubleNode next) {
+        this.next = next;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
 }
